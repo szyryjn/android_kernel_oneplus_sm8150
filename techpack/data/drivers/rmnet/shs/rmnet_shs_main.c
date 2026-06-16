@@ -1945,7 +1945,7 @@ void rmnet_shs_assign(struct sk_buff *skb, struct rmnet_port *port)
 		rmnet_shs_flush_reason[RMNET_SHS_FLUSH_INV_DL_IND]++;
 		rmnet_shs_flush_table(0, RMNET_RX_CTXT);
 	}
-	return 0;
+	return;
 }
 
 /* Cancels the flushing timer if it has been armed
